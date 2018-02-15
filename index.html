@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Learning CSS Through Creating Art</title>
+  <meta name="description" content="2D navigation demo" />
+  <meta name="author" content="Henrik Ingo" />
+  <link href="css/presentation.css" rel="stylesheet" />
+</head>
+
+<body class="impress-not-supported">
+  <div class="fallback-message">
+    <p>Your browser
+      <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.
+    </p>
+    <p>For the best experience please use the latest
+      <b>Chrome</b>,
+      <b>Safari</b> or
+      <b>Firefox</b> browser.</p>
+  </div>
+
+
+  <div id="impress" data-transition-duration="500">
+
+    <div class="step center first-slide" id="intro" data-scale="2" data-x="-500" data-y="-500">
+      <div class="name">
+        <div class="logo">
+          <span class="red name-letter letter">F</span>
+          <span class="purple name-letter letter">A</span>
+          <span class="bright-blue name-letter letter">C</span>
+          <span class="dark-blue name-letter letter">I</span>
+          <span class="blue name-letter letter">A</span>
+          <span class="teal name-letter letter">L</span>
+        </div>
+        <div class="logo">
+          <span class="green name-letter letter">R</span>
+          <span class="yellow name-letter letter">E</span>
+          <span class="pink name-letter letter">C</span>
+          <span class="orange name-letter letter">O</span>
+          <span class="red name-letter letter">G</span>
+          <span class="purple name-letter letter">N</span>
+          <span class="bright-blue name-letter letter">I</span>
+          <span class="dark-blue name-letter letter">T</span>
+          <span class="blue name-letter letter">I</span>
+          <span class="teal name-letter letter">O</span>
+          <span class="green name-letter letter">N</span>
+        </div>
+        <div class="logo">
+          <span class="pink name-letter letter">I</span>
+          <span class="orange name-letter letter">N</span>
+          &nbsp;&nbsp;
+          <span class="red name-letter letter">J</span>
+          <span class="purple name-letter letter">A</span>
+          <span class="bright-blue name-letter letter">V</span>
+          <span class="dark-blue name-letter letter">A</span>
+          <span class="blue name-letter letter">S</span>
+          <span class="teal name-letter letter">C</span>
+          <span class="green name-letter letter">R</span>
+          <span class="yellow name-letter letter">I</span>
+          <span class="pink name-letter letter">P</span>
+          <span class="orange name-letter letter">T</span>
+        </div>
+        <div class="intro">
+          by Ali Spittel
+        </div>
+      </div>
+    </div>
+
+    <div id="why" class="step" data-rel-x="1500" data-rel-y="1500">
+      <div class="logo">
+        <span class="red name-letter letter">W</span>
+        <span class="purple name-letter letter">H</span>
+        <span class="bright-blue name-letter letter">Y</span>
+        <span class="dark-blue name-letter letter">?</span>
+      </div>
+
+      <p>I saw a couple articles about facial recognition in Python and I wanted to see if this data-science-y technology could be easily adapted to the front-end of a project. I'm also interested in the intersection of art and code, and virtual reality seems like a really interesting medium for that.</p>
+
+      <div class="logo">
+        <span class="blue name-letter letter">H</span>
+        <span class="teal name-letter letter">O</span>
+        <span class="green name-letter letter">W</span>
+        <span class="yellow name-letter letter">?</span>
+      </div>
+
+      <p>I found a bunch of different libraries that allow you to implement facial recognition in JavaScript -- including clmtracker, ccv, headtrackr, and Tracking.js. The documentation was best for Tracking.js, so I went with that.</p>
+    </div>
+
+    <div id="the-app" class="step" data-rel-x="1500" data-rel-y="1500">
+      <div class="logo">
+        <span class="red name-letter letter">T</span>
+        <span class="purple name-letter letter">H</span>
+        <span class="bright-blue name-letter letter">E</span>
+        &nbsp;&nbsp;
+        <span class="dark-blue name-letter letter">A</span>
+        <span class="blue name-letter letter">P</span>
+        <span class="teal name-letter letter">P</span>
+      </div>
+      <p><a href="https://www.alispit.tel/tracking/">Let's look at the project...</a></p>
+      <p><a href="https://github.com/aspittel/tracking/blob/master/script.js">And the code...</a></p>
+    </div>
+
+    <div id="the-math" class="step" data-rel-x="1500" data-rel-y="1500">
+      <div class="logo">
+        <span class="red name-letter letter">T</span>
+        <span class="purple name-letter letter">H</span>
+        <span class="bright-blue name-letter letter">E</span>
+        &nbsp;&nbsp;
+        <span class="dark-blue name-letter letter">M</span>
+        <span class="blue name-letter letter">A</span>
+        <span class="teal name-letter letter">T</span>
+        <span class="green name-letter letter">H</span>
+      </div>
+      <p><a href="https://github.com/eduardolundgren/tracking.js/tree/master/src/detection/training/haar">Tracking.js</a> uses the <a href="https://en.wikipedia.org/wiki/Viola%E2%80%93Jones_object_detection_framework">Viola Jones</a>: an algorithm for facial detection. The algorithm focuses on a few facial features, for example: </p>
+      <ul>
+        <li>The eye region is darker than the upper-cheeks.</li>
+        <li>The nose bridge region is brighter than the eyes.</li>
+      </ul>
+      <p>The algorithm adds up the pixel values in a rectangle and compares them to the sum of the pixels in another rectangle in the image. Light rectangles are positive and dark ones are negative. It uses those differences to classify whether or not a rectangle contains a face.</p>
+    </div>
+    <div id="more-reading" class="step" data-rel-x="1500" data-rel-y="1500">
+      <div class="logo">
+        <span class="red name-letter letter">L</span>
+        <span class="purple name-letter letter">E</span>
+        <span class="bright-blue name-letter letter">A</span>
+        <span class="dark-blue name-letter letter">R</span>
+        <span class="blue name-letter letter">N</span>
+        &nbsp;&nbsp;
+        <span class="teal name-letter letter">M</span>
+        <span class="green name-letter letter">O</span>
+        <span class="yellow name-letter letter">R</span>
+        <span class="pink name-letter letter">E</span>
+        <span class="orange name-letter letter">!</span>
+      </div>
+      <p><a href="http://wearables.cc.gatech.edu/paper_of_week/viola01rapid.pdf">The Viola Jones Paper</a></p>
+      <p><a href="https://github.com/eduardolundgren/tracking.js/blob/master/src/detection/ViolaJones.js">Tracking.js Implementation of ViolaJones Algorithm</a></p>
+      <p><a href="https://dev.to/aspittel/facial-recognition-in-javascript-using-trackingjs-3l7">My Article on Tracking.js</a></p>
+    </div>
+
+    <script type="text/javascript" src="./js/impress.js"></script>
+    <script>
+      impress().init()
+    </script>
+
+</body>
+
+</html>
